@@ -4,11 +4,11 @@ layout: default
 
   <header class="grid grid-middle masthead absolute island-2">
     <div class="unit xs-1 s-1 m-1 l-1 xl-1">
-      <img class="img-flex island-2 logo" src="{{site.baseurl}}/images/wordmark.png" alt="">
+      <img class="img-flex island-2 logo" itemprop="image" src="{{site.baseurl}}/images/wordmark.png" alt="">
     </div>
     <nav class="nav-buttons unit xs-1 s-1 m-1 l-1">
       <ul class="list-group list-group-inline">
-        <li class="btn ghost-button-semi-transparent">
+        <li class="btn ghost-button-semi-transparent" itemprop="navigation">
           <a class="nav" href="#about">About Me</a>
         </li>
         <li class="btn ghost-button-semi-transparent">
@@ -21,17 +21,17 @@ layout: default
     </nav>
   </header>
 
-  <nav role="navigation" class="toggle absolute">
+  <nav role="navigation" class="toggle absolute" itemprop="navigation">
     <div id="menuToggle">
       <input type="checkbox" />
       <span></span>
       <span></span>
       <span></span>
       <ul id="menu">
-        <a href="#"><li>Home</li></a>
-        <a href="#about"><li>About me</li></a>
-        <a href="#explore"><li>Explore</li></a>
-        <a href="#contact"><li>Lets Chat!</li></a>
+        <a itemprop="url" href="#"><li>Home</li></a>
+        <a itemprop="url" href="#about"><li>About me</li></a>
+        <a itemprop="url" href="#explore"><li>Explore</li></a>
+        <a itemprop="url" href="#contact"><li>Lets Chat!</li></a>
       </ul>
     </div>
   </nav>
@@ -39,7 +39,7 @@ layout: default
   <section id="banner">
     <div class="grid grid-middle static">
       <div class="unit xs-1 s-1 m-1 l-1 xl-1">
-        <div class="banner">
+        <div class="banner" itemprop="image">
           <img class="img-flex" src="images/banner.png" alt="">
         </div>
       </div>
@@ -48,11 +48,11 @@ layout: default
 
   <section id="about" class="grid grid-bottom island-2">
     <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 pad-t-2 pad-b-2 island-2">
-      <img class="me" src="images/me.png" alt="">
+      <img itemprop="image" class="me" src="images/me.png" alt="">
     </div>
     <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 pad-t-1 pad-b-2">
-      <h3>Welcome</h3>
-      <p>You found me! Surrounded by nature, great friends, exhilarating experiences, relaxing music and a toasty bonfire. I am calm and collected, but a firecracker when you break through my shell. I find my peace of mind in the simplicity and natural beauty of nature. I believe in throwing out every idea, capturing the moment, and inspiring others through creativity.</p>
+      <h3 itemprop="name">Welcome</h3>
+      <p itemprop="description">You found me! Surrounded by nature, great friends, exhilarating experiences, relaxing music and a toasty bonfire. I am calm and collected, but a firecracker when you break through my shell. I find my peace of mind in the simplicity and natural beauty of nature. I believe in throwing out every idea, capturing the moment, and inspiring others through creativity.</p>
     </div>
   </section>
 
@@ -61,29 +61,29 @@ layout: default
   <section id="explore" class="grid .grid-middle">
     <div class="unit xs-1 s-1-3 m-1-3 l-1-3 xl-1-3">
       <div class="unit-offset-xl-1-3">
-        <h3>Explore</h3>
-        <p>A feast for the eyes!</p>
+        <h3 itemprop="name">Explore</h3>
+        <p itemprop="description">A feast for the eyes!</p>
       </div>
       <ul class="list-group list-group-inline">
         <li class="container">
-          <a href="{{site.baseurl}}/pages/portfolio/">
-          <img src="images/cheo.jpg" alt="me" align="left" class="image" style="width:100%">
+          <a itemprop="url" href="{{site.baseurl}}/pages/portfolio/">
+          <img itemprop="image" src="images/cheo.jpg" alt="me" align="left" class="image" style="width:100%">
           <div class="middle">
-          <div class="text">Cheo Annual Report</div>
+          <div class="text" itemprop="name">Cheo Annual Report</div>
         </a>
         </li>
         <li class="container">
-          <a href="{{site.baseurl}}/pages/portfolio/">
-          <img src="images/cheo.jpg" alt="me" align="center" class="image" style="width:100%">
+          <a itemprop="url" href="{{site.baseurl}}/pages/portfolio/">
+          <img itemprop="image" src="images/cheo.jpg" alt="me" align="center" class="image" style="width:100%">
           <div class="middle">
-          <div class="text">Print Illustration</div>
+          <div class="text" itemprop="name">Print Illustration</div>
         </a>
         </li>
         <li class="container">
           <a href="{{site.baseurl}}/pages/portfolio/">
           <img src="images/cheo.jpg" alt="me" align="right" class="image" style="width:100%">
           <div class="middle">
-          <div class="text">Photography</div>
+          <div class="text" itemprop="name">Photography</div>
           </a>
         </li>
       </ul>
