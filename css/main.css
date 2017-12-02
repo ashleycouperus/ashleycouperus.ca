@@ -220,4 +220,9 @@ footer {
   .toggle {
     display: none;
   }
+
+  .description {
+    border-right: 1px solid;
+    border-color: #E3E668;
+  }
 }
