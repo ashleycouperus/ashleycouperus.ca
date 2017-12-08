@@ -11,6 +11,12 @@ html {
   text-size-adjust: 100%;
   font-family: 'Raleway', sans-serif;
   text-align: center;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
 }
 
 .middle {
@@ -171,10 +177,9 @@ h3 {
   color: #00AFAA;
 }
 
-.btn {
-  margin-top: 24em;
-  margin-left: 2em;
-  margin-right: 2em;
+.buttons {
+  margin-top: -14em;
+  margin-left: 1em;
 }
 
 .ghost-button-semi-transparent {

@@ -12,17 +12,22 @@
 </head>
 <body>
 
-  <header class="grid grid-middle masthead absolute island-2">
-    <nav class="nav-buttons unit xs-1 s-1 m-1 l-1">
+  <header class="grid grid-middle masthead">
+    <nav class="nav-buttons grid">
+      <div class="unit xs-1 s-1 m-1 l-1 xl-1">
+        <div class="banner" itemprop="image">
+          <img class="img-flex" src="images/banner.png" alt="">
+        </div>
+      </div>
       <ul class="list-group list-group-inline">
-        <li class="btn ghost-button-semi-transparent" itemprop="navigation">
-          <a class="nav" href="#about">About Me</a>
+        <li class="unit xs-1 s-1 m-1 l-1 xl-1 buttons btn ghost-button-semi-transparent" itemprop="navigation">
+          <a class="nav" href="#about" align="left">About Me</a>
         </li>
-        <li class="btn ghost-button-semi-transparent">
-          <a class="nav" href="#explore">Explore</a>
+        <li class="unit xs-1 s-1 m-1 l-1 xl-1 buttons btn ghost-button-semi-transparent">
+          <a class="nav" href="#explore" align="center">Explore</a>
         </li>
-        <li class="btn ghost-button-semi-transparent">
-          <a class="nav" href="#contact">Let's Chat</a>
+        <li class="unit xs-1 s-1 m-1 l-1 xl-1 buttons btn ghost-button-semi-transparent">
+          <a class="nav" href="#contact" align="right">Let's Chat</a>
         </li>
       </ul>
     </nav>
@@ -42,16 +47,6 @@
       </ul>
     </div>
   </nav>
-
-  <section id="banner">
-    <div class="grid grid-middle static">
-      <div class="unit xs-1 s-1 m-1 l-1 xl-1">
-        <div class="banner" itemprop="image">
-          <img class="img-flex" src="images/banner.png" alt="">
-        </div>
-      </div>
-    </div>
-  </section>
 
   <main>
     {{content}}
