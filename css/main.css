@@ -171,6 +171,12 @@ h3 {
   color: #00AFAA;
 }
 
+.btn {
+  margin-top: 24em;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
 .ghost-button-semi-transparent {
   display: inline-block;
   width: 200px;

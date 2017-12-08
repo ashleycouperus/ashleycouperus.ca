@@ -12,6 +12,47 @@
 </head>
 <body>
 
+  <header class="grid grid-middle masthead absolute island-2">
+    <nav class="nav-buttons unit xs-1 s-1 m-1 l-1">
+      <ul class="list-group list-group-inline">
+        <li class="btn ghost-button-semi-transparent" itemprop="navigation">
+          <a class="nav" href="#about">About Me</a>
+        </li>
+        <li class="btn ghost-button-semi-transparent">
+          <a class="nav" href="#explore">Explore</a>
+        </li>
+        <li class="btn ghost-button-semi-transparent">
+          <a class="nav" href="#contact">Let's Chat</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <nav role="navigation" class="toggle absolute" itemprop="navigation">
+    <div id="menuToggle">
+      <input type="checkbox" />
+      <span></span>
+      <span></span>
+      <span></span>
+      <ul id="menu">
+        <a itemprop="url" href="#"><li>Home</li></a>
+        <a itemprop="url" href="#about"><li>About me</li></a>
+        <a itemprop="url" href="#explore"><li>Explore</li></a>
+        <a itemprop="url" href="#contact"><li>Lets Chat!</li></a>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="banner">
+    <div class="grid grid-middle static">
+      <div class="unit xs-1 s-1 m-1 l-1 xl-1">
+        <div class="banner" itemprop="image">
+          <img class="img-flex" src="images/banner.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
   <main>
     {{content}}
   </main>
