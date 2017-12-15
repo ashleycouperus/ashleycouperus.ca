@@ -9,7 +9,7 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  font-family: 'Raleway', sans-serif;
+  font-family: sans-serif;
   text-align: center;
   overflow-x: hidden;
 }
@@ -17,6 +17,24 @@ html {
 body {
   margin: 0;
   overflow-x: hidden;
+}
+
+.fonts-loaded {
+  font-family: "Raleway", sans-serif;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/raleway-bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/raleway-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 .middle {
@@ -72,6 +90,14 @@ a {
 
 a:hover {
   color: #e2e2e2;
+}
+
+.email {
+  color: #E2E668
+}
+
+.icons .email:hover {
+  opacity: .5;
 }
 
 #menuToggle {
@@ -216,7 +242,7 @@ footer {
 }
 
 .me {
-  max-width: 50%;
+  max-width: 60%;
 }
 
 .image {
@@ -239,6 +265,10 @@ footer {
 
   .toggle {
     display: none;
+  }
+
+  .me{
+    max-width: 30%;
   }
 
   .description {
