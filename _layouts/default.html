@@ -2,7 +2,8 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
-  <title>Ashley Couperus Portfolio</title>
+  <title>Ashley Couperus Portfolio - Ottawa Based Graphic Designer</title>
+  <meta name="description" content="A portfolio showcasing the work of an Ottawa based Graphic Designer.">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="images/favicon.png" rel="icon">
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i" rel="stylesheet">
@@ -17,25 +18,25 @@
       <span></span>
       <span></span>
       <ul id="menu">
-        <a itemprop="url" align="left" class="exa bold" href="#home"><li>Home</li></a>
-        <a itemprop="url" align="left" class="exa bold" href="#about"><li>About me</li></a>
-        <a itemprop="url" align="left" class="exa bold" href="#explore"><li>Explore</li></a>
-        <a itemprop="url" align="left" class="exa bold" href="#contact"><li>Lets Chat!</li></a>
+        <a itemprop="url" align="left" class="exa bold" href="{{site.baseurl}}/#home"><li>Home</li></a>
+        <a itemprop="url" align="left" class="exa bold" href="{{site.baseurl}}/#about"><li>About me</li></a>
+        <a itemprop="url" align="left" class="exa bold" href="{{site.baseurl}}/#explore"><li>Explore</li></a>
+        <a itemprop="url" align="left" class="exa bold" href="{{site.baseurl}}/#contact"><li>Lets Chat!</li></a>
       </ul>
     </div>
   </nav>
 
-  <header class="grid grid-middle masthead">
+  <header id="home" id="top" class="grid grid-middle masthead">
     <div class="unit xs-1 s-1 m-1 l-1 xl-1">
       <div class="banner" itemprop="image">
-        <img class="img-flex" src="images/banner.png" alt="">
+        <img class="img-flex" src="images/banner.png" alt="Banner">
       </div>
     </div>
   </header>
 
   <section>
     <div>
-      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+      <button href="{{site.baseurl}}/#home" onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     </div>
   </section>
 
@@ -79,6 +80,17 @@
     </ul>
     <p><span class="micro" itemprop="name">Copyright © Ashley Couperus</span></p>
   </footer>
+
+<script>
+  var menuToggle=document.querySelector("#menuToggle input");
+  var menuLinks=document.querySelectorAll("#menuToggle a");
+
+  [].forEach.call(menuLinks, function(link){
+    link.addEventListener("click", function(){
+      menuToggle.checked=false;
+    });
+  });
+</script>
 
 <script>
 (function(){'use strict';var f,g=[];function l(a){g.push(a);1==g.length&&f()}function m(){for(;g.length;)g[0](),g.shift()}f=function(){setTimeout(m)};function n(a){this.a=p;this.b=void 0;this.f=[];var b=this;try{a(function(a){q(b,a)},function(a){r(b,a)})}catch(c){r(b,c)}}var p=2;function t(a){return new n(function(b,c){c(a)})}function u(a){return new n(function(b){b(a)})}function q(a,b){if(a.a==p){if(b==a)throw new TypeError;var c=!1;try{var d=b&&b.then;if(null!=b&&"object"==typeof b&&"function"==typeof d){d.call(b,function(b){c||q(a,b);c=!0},function(b){c||r(a,b);c=!0});return}}catch(e){c||r(a,e);return}a.a=0;a.b=b;v(a)}}

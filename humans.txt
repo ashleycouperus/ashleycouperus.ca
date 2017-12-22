@@ -1,0 +1,21 @@
+# humanstxt.org
+
+# TEAM
+
+Designer & Developer: Ashley Couperus <hello@ashleycouperus.ca>
+Site: https://ashleycouperus.ca
+Github:
+Location: Ottawa, Canada
+
+---
+
+# THANKS
+
+
+---
+
+# THECNOLOGY
+
+## Software
+
+- Git + Github

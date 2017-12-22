@@ -37,11 +37,6 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
-.top-banner {
-  margin-top: -4em;
-  margin-left: -.2em;
-}
-
 .background {
   background-color: #00AFAA;
   color: #E3E668;
@@ -298,5 +293,9 @@ footer {
 
   #menuToggle {
     position: fixed;
+  }
+
+  .top-banner {
+    margin-top: -7em;
   }
 }
