@@ -1,3 +1,0 @@
-Sitemap: https://ashleycouperus.ca/sitemap.xml
-
-User-agent: *
