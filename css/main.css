@@ -254,6 +254,60 @@ footer {
   position: fixed;
 }
 
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.error {
+  background-color: #00AFAA;
+  padding: 2em;
+}
+
+.top-right {
+  top: 80px;
+  right: 0px;
+}
+
+.link {
+  top: 170px;
+  right: 100px;
+}
+
+.link:hover {
+  fill: #fff;
+  transition: .3s ease-in-out;
+}
+
+.tena, .tera{
+  color: #fff;
+  text-align: center;
+}
+
+
+@media only screen and (min-width: 38em) {
+
+  .top-right {
+    position: absolute;
+    top: 20px;
+    right: 16px;
+  }
+
+  .link {
+    position: absolute;
+    top: 190px;
+    right: 20px;
+    left: 20px;
+  }
+
+  .error {
+    background-color: #00AFAA;
+    padding-bottom: 4em;
+  }
+
+}
+
 
 @media only screen and (min-width: 60em) {
 
@@ -286,5 +340,18 @@ footer {
 
   #menuToggle {
     top: 40px;
+  }
+
+  .top-right {
+    position: absolute;
+    top: 130px;
+    right: 16px;
+  }
+
+  .link {
+    position: absolute;
+    top: 210px;
+    right: 70px;
+    left: 70px;
   }
 }
