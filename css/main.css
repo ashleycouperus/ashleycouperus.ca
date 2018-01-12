@@ -285,6 +285,10 @@ footer {
   text-align: center;
 }
 
+.title {
+  margin-top: 1em;
+}
+
 
 @media only screen and (min-width: 38em) {
 
@@ -307,7 +311,7 @@ footer {
   }
 
   .top-banner {
-    margin-top: -4em;
+    margin-top: -2em;
   }
 
 }
@@ -335,7 +339,12 @@ footer {
   }
 
   .top-banner {
-    margin-top: -7em;
+    margin-top: -4em;
+  }
+
+  .content {
+    margin-left: 5em;
+    margin-right: 5em;
   }
 
   #menuToggle {
@@ -357,5 +366,17 @@ footer {
     top: 210px;
     right: 70px;
     left: 70px;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+
+  .top-banner {
+    margin-top: -7em;
+  }
+
+  .content {
+    margin-left: 18em;
+    margin-right: 18em;
   }
 }
