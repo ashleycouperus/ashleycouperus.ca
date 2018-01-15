@@ -290,6 +290,13 @@ footer {
 }
 
 
+@media only screen and (min-width: 25em) {
+
+  .title {
+    margin-top: 2em;
+  }
+}
+
 @media only screen and (min-width: 38em) {
 
   .top-right {
@@ -312,6 +319,10 @@ footer {
 
   .top-banner {
     margin-top: -2em;
+  }
+
+  .title {
+    margin-top: 2em;
   }
 
 }
@@ -339,7 +350,7 @@ footer {
   }
 
   .top-banner {
-    margin-top: -4em;
+    margin-top: -3em;
   }
 
   .content {
@@ -366,6 +377,10 @@ footer {
     top: 210px;
     right: 70px;
     left: 70px;
+  }
+
+  .title {
+    margin-top: 2.5em;
   }
 }
 
